@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a; 
+    printf("Enter your exam score: ");
+    scanf("%d", &a);
+    if (a>= 33) {
+        printf("Congratulations! You passed the exam.\n");
+    } else {
+        printf("Oops! You didn't quite make it. But don't worry, keep learning!\n");
+    }
+    return 0;
+}
