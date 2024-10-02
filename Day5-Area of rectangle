@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int L, B;
+    printf("Enter the length: ");
+    scanf("%d", &L);
+    printf("Enter the breadth: ");
+    scanf("%d", &B);
+    int area = L * B;
+    printf("Area: %d * %d = %d\n", L, B, area);
+    return 0;
+}
