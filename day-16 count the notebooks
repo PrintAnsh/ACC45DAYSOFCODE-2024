@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int a,b;
+	scanf("%d",&a);
+	for(int i = 0;i<a;i++){
+		scanf("%d",&b);
+		int notebooks = b*10;
+		printf("%d\n\n",notebooks);
+	
+	}
+	return 0 ;
+}
