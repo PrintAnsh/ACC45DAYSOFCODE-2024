@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+	int t;
+	scanf("%d", &t);
+	while(t--){
+	    int n, k,j=0;
+	    scanf("%d %d", &n, &k);
+	    for(int i=0; i<n ;i++){
+	        int a;
+	        scanf("%d", &a);
+	        if((k+a)%7==0){
+	            j++;
+	        }
+	    }printf("%d\n", j);
+	}
+
+}
