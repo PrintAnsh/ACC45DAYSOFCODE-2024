@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+	int t, N;
+	scanf("%d", &t);
+	for(int i=1; i<=t; i++)
+	{
+	    scanf("%d", &N);
+	    if(N%4==0)
+	    {
+	        printf("GOOD\n");
+	    }
+	    else
+	    {
+	        printf("NOT GOOD\n");
+	    }
+	}
+    return 0;
+}
