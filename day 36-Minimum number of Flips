@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+	int t;
+	scanf("%d",&t);
+	for(int i=0;i<t;i++){
+	    int n,c=0,d=0;
+	    scanf("%d",&n);
+	    int a[n];
+	    for(int k=0;k<n;k++)
+	    scanf("%d",&a[k]);
+	    for(int j=0;j<n;j++){
+	        if(a[j]==-1)
+	        c++;
+	        else if(a[j]==1)
+	        d++;
+	    }
+	    if(n%2!=0)
+	    printf("-1\n");     
+	    else if(c>d)
+	    printf("%d\n",(c-d)/2);
+	    else if(d>c)
+	    printf("%d\n",(d-c)/2);
+	    else
+	    printf("0\n");
+   } return 0;
+}
