@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int t,a,b,c,min,total;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d%d%d",&a,&b,&c);
+        min=a;
+        if(b<min)
+           min=b;
+        if(c<min)
+           min=c;
+        total=a+b+c-min;
+        printf("%d\n",total);
+    }
+}
