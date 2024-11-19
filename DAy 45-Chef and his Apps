@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	int t;
+	scanf("%d",&t);
+	while(t>0){
+	    int s,x,y,z;
+	    scanf("%d %d %d %d",&s,&x,&y,&z);
+	    int a = s - (x+y);
+	    if(a>=z){
+	        printf("0\n");
+	    }
+	    else if(a<z){
+	        if(abs(a-z)<=x || abs(a-z)<=y){
+	            printf("1\n");
+	        }
+	        else if(abs(a-z)<=x+y){
+	            printf("2\n");
+	        }
+	    }
+	    t--;
+	}
+}
